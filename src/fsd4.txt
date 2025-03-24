@@ -1,0 +1,47 @@
+Data is a collection of raw fact . Data is meaningless .It is not useful.
+Information- processed data ,data with meaning 
+Big data - huge volume of data.
+
+Types of data
+Unstructured data ,Structured data , semi structured data
+Database - collection of data .
+
+Forms of database :Physical form - what we are seeing in our eyes (notebook).Dataloss is disadvantages.lack of security. Digital form -, Logical form - data is maintained using software (DBMS) - problems of dbms : data redundancy (unwanted duplication),Data inconsistency .EF COD-1975 (RDBMS)-data is stored in tables- software Oracle ,MySQL,PostgreSQL,SQLserver(Microsoft) , DB2(IBM), SQLite(local storage)
+Frontend - client - user interface      backend - data processing , data storage 
+
+SQL(SEQL)- DDL- Data definition language (CREATE , ALTER, TRUNCATE , RENAME , DROP)
+DML- data manipulation language (UPDATE, DELETE,INSERT)
+Transaction control language - (COMMIT, ROLLBACK , SAVEPOINT)
+DCL - data control language (GRANT,REVOKE)
+DQL - data query language (SELECT)
+
+Userinferce for database - Command Line interface , My sql workbench , application 
+
+cmd :
+mysql -u root -p - initialization .
+how to create a database :
+create database databasename;
+list the name of database : 
+show databases;
+to use a database :
+use databasename 
+to find the current database 
+select database();
+create table tablename( column_name datatype (size), column_name datatype (size));
+create table student(rollno int , name varchar(10), DOB date , gender char(1));
+to find the structure of the table : 
+desc tablename;
+desc student;
+how to insert data:
+insert into tablename values(value1,value2,value3);
+insert into student values( 23 ,'Sri','2004-10-14' (Mysql),'m');
+insert into student values( 23 ,'Sri',null,'m'); - unknown value null it is not equal to 0.will not oocupy space 
+insert into student(name,gender) values ('jeni','f');
+to save changes:
+commit 
+to read the records :
+select * from tablename;
+select * from student; 
+
+varchar - variable length string 
+char - fixed length string 
